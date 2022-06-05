@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/__nav.ejs') %> 
+    <form action="" method="get" autocomplete="off">
+        <label for="ad">profli getirilecek adı girin</label>
+        <input type="text" name="ad" required>
+        <input type="submit" value="ara">
+    </form>
+    <% if (typeof id != 'undefined') { %>
+        <h2><%= ad %> profil sayfası</h2>
+        <h3>yaş : <%= yas %></h3>
+        <ul>
+            <% for(yetenek of yetenekler) { %>
+                <li><%= yetenek %></li>    
+            <% } %>
+        </ul>
+    <% } else if (typeof hata != 'undefined'){ %>
+        <h1>404 kişi bulunamadı</h1>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,72 @@
+:root {
+    color-scheme: dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: system-ui, 'Ubuntu';
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background-color: #23252e;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+ul li {
+    display: inline-flex;
+    flex-direction: column;
+    color: white;
+    margin: 10px 10px 0;
+    font-size: 18px;
+}
+
+a {
+    transition: 500ms color;
+    color: white;
+}
+
+a:hover {
+    color: #00dfba;
+}
+
+h1 {
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 25px auto;
+    align-items: center;
+}
+
+form input {
+    margin: 15px 0;
+    padding: 6px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+input[type="submit"]:hover {
+    background-color: #635b5b;
+}
